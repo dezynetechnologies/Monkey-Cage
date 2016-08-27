@@ -46,6 +46,190 @@
 		<![endif]-->
 	</head>
 
+  <?php
+$A1dayerr =  $A1montherr = $A3montherr = $A6montherr = $Ayearerr = "";
+$S1dayerr = $S1montherr= $S3montherr= $S6montherr= $Syearerr="";
+$K1dayerr= $K1montherr = $K3montherr= $K6montherr= $Kyearerr="";
+$F1dayerr ="";
+$KK1dayerr = "";
+$EELerr = $EECerr = $EEBerr="";
+$EKLerr = $EKCerr = $EKBerr = "";
+
+if (isset($_POST['update'])) {
+  
+
+
+  $A1day = $_POST['A1day'];
+  if (!preg_match('/^[0-9].*$/', $A1day)) {
+
+$A1dayerr = "error";
+    
+  }
+
+  $A1month = $_POST['A1month'];
+   if (!preg_match('/^[0-9].*$/', $A1month)) {
+
+$A1montherr = "error";
+
+    
+  }
+  $A3month = $_POST['A3month'];
+   if (!preg_match('/^[0-9].*$/', $A3month)) {
+
+$A3montherr = "error";
+
+    
+  }
+  $A6month = $_POST['A6month'];
+   if (!preg_match('/^[0-9].*$/', $A6month)) {
+
+$A6montherr = "error";
+
+    
+  }
+  $Ayear = $_POST['Ayear'];
+   if (!preg_match('/^[0-9].*$/', $Ayear)) {
+
+$Ayearerr = "error";
+
+    
+  }
+
+  $S1day = $_POST['S1day'];
+  if (!preg_match('/^[0-9].*$/', $S1day)) {
+
+$S1dayerr = "error";
+
+    
+  }
+  $S1month = $_POST['S1month'];
+    if (!preg_match('/^[0-9].*$/', $S1month)) {
+
+$S1montherr = "error";
+
+    
+  }
+
+  $S3month = $_POST['S3month'];
+    if (!preg_match('/^[0-9].*$/', $S3month)) {
+
+$S3montherr = "error";
+
+    
+  }
+  $S6month = $_POST['S6month'];
+    if (!preg_match('/^[0-9].*$/', $S6month)) {
+
+$S6montherr = "error";
+
+    
+  }
+  $Syear = $_POST['Syear'];
+    if (!preg_match('/^[0-9].*$/', $Syear)) {
+
+$Syearerr = "error";
+
+    
+  }
+
+  $K1day = $_POST['K1day'];
+    if (!preg_match('/^[0-9].*$/', $K1day)) {
+
+$K1dayerr = "error";
+
+    
+  }
+  $K1month = $_POST['K1month'];
+    if (!preg_match('/^[0-9].*$/', $K1month)) {
+
+$K1montherr = "error";
+
+    
+  }
+  $K3month = $_POST['K3month'];
+    if (!preg_match('/^[0-9].*$/', $K3month)) {
+
+$K3montherr = "error";
+
+    
+  }
+  $K6month = $_POST['K6month'];
+    if (!preg_match('/^[0-9].*$/', $A1day)) {
+
+$K6montherr = "error";
+
+    
+  }
+  $Kyear = $_POST['Kyear']; 
+  if (!preg_match('/^[0-9].*$/', $Kyear)) {
+
+$Kyearerr = "error";
+
+    
+  }
+
+  $F1day = $_POST['F1day'];
+  if (!preg_match('/^[0-9].*$/', $F1day )) {
+
+$F1dayerr = "error";
+
+    
+  }
+  $KK1day = $_POST['KK1day'];
+  if (!preg_match('/^[0-9].*$/', $KK1day )) {
+
+$KK1dayerr = "error";
+
+    
+  }
+
+  $EEL = $_POST['EEL'];
+  if (!preg_match('/^[0-9].*$/', $EEL)) {
+
+$EELerr = "error";
+   
+  }
+  $EEC = $_POST['EEC'];
+  if (!preg_match('/^[0-9].*$/', $EEC)) {
+
+$EECerr = "error";
+
+    
+  }
+  $EEB = $_POST['EEB'];
+  if (!preg_match('/^[0-9].*$/', $EEB)) {
+
+$EEBerr = "error";
+
+    
+  }
+
+  $EKL = $_POST['EKL'];
+  if (!preg_match('/^[0-9].*$/', $EKL)) {
+
+$EKLerr = "error";
+
+    
+  }
+  $EKC = $_POST['EKC'];
+  if (!preg_match('/^[0-9].*$/', $EKC)) {
+
+$EKCerr = "error";
+
+    
+  }
+  $EKB = $_POST['EKB'];
+  if (!preg_match('/^[0-9].*$/', $EKB)) {
+
+$EKBerr = "error";
+
+    
+  }
+}
+
+
+?>
+
 	<body>
 		<div class="container">
   <div class="jumbotron">
@@ -54,11 +238,441 @@
   </div>
   <div class="panel panel-default">
   <div class="panel-body">
-  	<h2  style="color:red;" >Pricing</h2>
+  	
 
   <div class="panel-body">	
 
   	<form method="post" action="" >
+<h2  style="color:red;" >Timings</h2>
+  		<div class="col-lg-12">
+          <div class="table-responsive">
+          	 <table class="table">
+  			<tr>
+		<th>SAT</th>
+		<th>SUN</th>
+		<th>MON</th>
+		<th>TUE</th>
+		<th>WED</th>
+		<th>THU</th>
+		<th>FRI</th>
+
+	</tr>
+
+
+	<tr>
+	<td>
+<select name="SATo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="SATc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="satclo">Closed<br></td>
+
+
+
+	<td>
+<select name="SUNo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="SUNc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="sunclo">Closed<br></td>
+	<td>
+<select name="MONo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="MONc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="monclo">Closed<br></td>
+	<td>
+<select name="TUEo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="TUEc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="tueclo">Closed<br></td></input></td>
+	<td>
+<select name="WEDo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="WEDc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="wedclo">Closed<br></td>
+	<td>
+<select name="THUo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="THUc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="thuclo">Closed<br></td>
+	<td>
+<select name="FRIo">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select>
+<br>-<br>
+<select name="FRIc">
+		<?php
+		for ($i=0; $i < 24 ; $i++) { 
+			
+		
+  echo "<option>$i : 00  </option> ";
+}
+  ?> 
+</select><br><br><input type="checkbox" name="friclo">Closed<br></td>
+   </tr>
+  
+
+
+
+</table>
+</div>
+  		</div>
+
+<h2  style="color:red;" >Dienstleistungen</h2>
+  		<div class="col-lg-12">
+  			<div class="col-lg-6">
+  				   <div class="table-responsive">
+          	 <table class="table">
+          	 	<tr>
+          	 		<th>Title</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_service" ></textarea></td>
+          	 		
+
+          	 	</tr>
+
+          	 	<tr>
+          	 		
+          	 		<th>Content</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><textarea rows="25" cols="50" style="margin: 0px; height: 546px; width: 381px;" name="content_service"></textarea></td>
+
+          	 	</tr>
+
+
+
+
+          	 	</table>
+
+          	 	</div>
+
+
+
+  			</div>
+  			<div class="col-lg-6">
+  				   <div class="table-responsive">
+          	 <table class="table">
+          	 	<tr>
+          	 		<th>Feature1</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_feature1"></textarea></td>
+          	 		
+
+          	 	</tr>
+
+          	 	<tr>
+          	 		
+          	 		<th>Content1</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><textarea rows="4" cols="50"  name="title_content1"></textarea></td>
+
+          	 	</tr>
+          	 		<tr>
+          	 		<th>Feature2</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_feature2"></textarea></td>
+          	 		
+
+          	 	</tr>
+
+          	 	<tr>
+          	 		
+          	 		<th>Content2</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><textarea rows="4" cols="50"  name="title_content2"></textarea></td>
+
+          	 	</tr>
+          	 		<tr>
+          	 		<th>Feature3</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_feature3"></textarea></td>
+          	 		
+
+          	 	</tr>
+
+          	 	<tr>
+          	 		
+          	 		<th>Content3</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><textarea rows="4" cols="50"  name="title_content3"></textarea></td>
+
+          	 	</tr>
+
+          	 	 	 		
+
+
+
+  			</div>
+  			</div>
+
+             <div class="col-lg-12" > 
+  			<div class="table-responsive">
+          	 <table class="table">
+          	 			<tr>
+          	 			<input type="file" name="fileToUpload1" id="fileToUpload">
+          	 			<input type="file" name="fileToUpload2" id="fileToUpload">
+          	 		</tr>
+
+          	 		      	 	
+          	 		
+          	 			
+   
+          	 		</div>
+          	 	</table>
+          	 </div>
+
+          	 	</div>
+
+
+
+<h2  style="color:red;" >Unsere Angebote</h2>
+<div class="col-lg-12">
+  			<div class="col-lg-6">
+  				   <div class="table-responsive">
+          	 <table class="table">
+          	 	<tr>
+          	 		<th>Title1</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50"  name="title_offer1"></textarea></td>
+          	 		
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Content1</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 	
+          	 		<td><textarea rows="4" cols="50" name="content_offer1" ></textarea></td>
+          	 	
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Image1</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><input type="file" name="fileToUpload_offer1" id="fileToUpload"></td>
+          	 	</tr>
+          	 </table>
+          	</div>
+          </div>
+                  <div class="col-lg-6">
+  				   <div class="table-responsive">
+          	 <table class="table">
+          	 	<tr>
+          	 		<th>Title2</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_offer2"></textarea></td>
+          	 		
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Content2</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 	
+          	 		<td><textarea rows="4" cols="50" name="content_offer2"></textarea></td>
+          	 	
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Image2</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><input type="file" name="fileToUpload_offer2" id="fileToUpload"></td>
+          	 	</tr>
+          	 </table>
+          	</div>
+          </div>
+      </div>
+
+      <div class="col-lg-12">
+  			<div class="col-lg-6">
+  				   <div class="table-responsive">
+          	 <table class="table">
+          	 	<tr>
+          	 		<th>Title3</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_offer3"></textarea></td>
+          	 		
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Content3</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 	
+          	 		<td><textarea rows="4" cols="50" name="content_offer3"></textarea></td>
+          	 	
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Image3</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><input type="file" name="fileToUpload_offer3" id="fileToUpload"></td>
+          	 	</tr>
+          	 </table>
+          	</div>
+          </div>
+                  <div class="col-lg-6">
+  				   <div class="table-responsive">
+          	 <table class="table">
+          	 	<tr>
+          	 		<th>Title4</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 		<td><textarea rows="1" cols="50" name="title_offer4"></textarea></td>
+          	 		
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Content4</th>
+          	 		
+          	 	</tr>
+          	 	<tr>
+          	 	
+          	 		<td><textarea rows="4" cols="50"></textarea></td>
+          	 	
+          	 	</tr>
+          	 		<tr>
+          	 		
+          	 		<th>Image4</th>
+          	 	</tr>
+          	 	<tr>
+          	 		
+          	 		<td><input type="file" name="fileToUpload_offer4" id="fileToUpload"></td>
+          	 	</tr>
+          	 </table>
+          	</div>
+          </div>
+      </div>
+  		
+
+<h2  style="color:red;" >Preis</h2>
+
 <div class="col-lg-3">
 
 <h2 class="top_head" >Erwachsene</h2>
@@ -74,7 +688,8 @@
 
 
 	<tr>
-	<td> <input type="text" name="A1day"  placeholder="Eingeben Preis" ></input> </td>
+	<td> <input type="text" name="A1day"  placeholder="Eingeben Preis" ></input> <span class="error" style ="color:red;">* <?php echo $A1dayerr ;?></span></td> 
+
    </tr>
 
    <tr>
@@ -83,7 +698,7 @@
 
 
 	<tr>
-	<td> <input type="text" name="A1month"  placeholder="Eingeben Preis" ></input> </td>
+	<td> <input type="text" name="A1month"  placeholder="Eingeben Preis" ></input> <span class="error" style ="color:red;">* <?php echo $A1montherr ;?></span> </td>
    </tr>
 
    <tr>
@@ -92,7 +707,7 @@
 
 
 	<tr>
-	<td> <input type="text" name="A3month"  placeholder="Eingeben Preis" ></input> </td>
+	<td> <input type="text" name="A3month"  placeholder="Eingeben Preis" ></input><span class="error" style ="color:red;">* <?php echo $A3montherr ;?></span></td>
    </tr>
 
    <tr>
@@ -101,7 +716,7 @@
 
 
 	<tr>
-	<td> <input type="text" name="A6month"  placeholder="Eingeben Preis" ></input> </td>
+	<td> <input type="text" name="A6month"  placeholder="Eingeben Preis" ></input> <span class="error" style ="color:red;">* <?php echo $A6montherr ;?></span> </td>
    </tr>
 
    <tr>
@@ -110,7 +725,7 @@
 
 
 	<tr>
-	<td> <input type="text" name="Ayear"  placeholder="Eingeben Preis" ></input> </td>
+	<td> <input type="text" name="Ayear"  placeholder="Eingeben Preis" ></input>   <span class="error" style ="color:red;">* <?php echo $Ayearerr ;?></span></td>
    </tr>
 
 </table>	
@@ -131,7 +746,7 @@
 
 
 	<tr>
-	<td> <input type="text" name="S1day"  placeholder="Eingeben Preis" ></input> </td>
+	<td> <input type="text" name="S1day"  placeholder="Eingeben Preis" ></input>  <span class="error" style ="color:red;">* <?php echo $S1dayerr ;?></span> </td>
    </tr>
 
    <tr>
@@ -386,24 +1001,6 @@
 
 
 
-<?php
 
-
-if (isset($_POST['update'])) {
-	
-
-
-	$A1day = $_POST['A1day'];
-	$A1month = $_POST['A1month'];
-
-
-	echo $A1day . $A1month ;
-
-
-
-}
-
-
-?>
 </body>
 </html>
