@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['user_email'])) {
+  
+  echo "<script>window.open('login.php?not_admin=You are not an admin !','_self')</script>";
+}
+
+else{
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -44,196 +60,35 @@
 		<script src="assets/js/html5shiv.min.js"></script>
 		<script src="assets/js/respond.min.js"></script>
 		<![endif]-->
+
+    <script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = " ";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
 	</head>
 
-  <?php
-$A1dayerr =  $A1montherr = $A3montherr = $A6montherr = $Ayearerr = "";
-$S1dayerr = $S1montherr= $S3montherr= $S6montherr= $Syearerr="";
-$K1dayerr= $K1montherr = $K3montherr= $K6montherr= $Kyearerr="";
-$F1dayerr ="";
-$KK1dayerr = "";
-$EELerr = $EECerr = $EEBerr="";
-$EKLerr = $EKCerr = $EKBerr = "";
 
-if (isset($_POST['update'])) {
-  
-
-
-  $A1day = $_POST['A1day'];
-  if (!preg_match('/^[0-9].*$/', $A1day)) {
-
-$A1dayerr = "error";
-    
-  }
-
-  $A1month = $_POST['A1month'];
-   if (!preg_match('/^[0-9].*$/', $A1month)) {
-
-$A1montherr = "error";
-
-    
-  }
-  $A3month = $_POST['A3month'];
-   if (!preg_match('/^[0-9].*$/', $A3month)) {
-
-$A3montherr = "error";
-
-    
-  }
-  $A6month = $_POST['A6month'];
-   if (!preg_match('/^[0-9].*$/', $A6month)) {
-
-$A6montherr = "error";
-
-    
-  }
-  $Ayear = $_POST['Ayear'];
-   if (!preg_match('/^[0-9].*$/', $Ayear)) {
-
-$Ayearerr = "error";
-
-    
-  }
-
-  $S1day = $_POST['S1day'];
-  if (!preg_match('/^[0-9].*$/', $S1day)) {
-
-$S1dayerr = "error";
-
-    
-  }
-  $S1month = $_POST['S1month'];
-    if (!preg_match('/^[0-9].*$/', $S1month)) {
-
-$S1montherr = "error";
-
-    
-  }
-
-  $S3month = $_POST['S3month'];
-    if (!preg_match('/^[0-9].*$/', $S3month)) {
-
-$S3montherr = "error";
-
-    
-  }
-  $S6month = $_POST['S6month'];
-    if (!preg_match('/^[0-9].*$/', $S6month)) {
-
-$S6montherr = "error";
-
-    
-  }
-  $Syear = $_POST['Syear'];
-    if (!preg_match('/^[0-9].*$/', $Syear)) {
-
-$Syearerr = "error";
-
-    
-  }
-
-  $K1day = $_POST['K1day'];
-    if (!preg_match('/^[0-9].*$/', $K1day)) {
-
-$K1dayerr = "error";
-
-    
-  }
-  $K1month = $_POST['K1month'];
-    if (!preg_match('/^[0-9].*$/', $K1month)) {
-
-$K1montherr = "error";
-
-    
-  }
-  $K3month = $_POST['K3month'];
-    if (!preg_match('/^[0-9].*$/', $K3month)) {
-
-$K3montherr = "error";
-
-    
-  }
-  $K6month = $_POST['K6month'];
-    if (!preg_match('/^[0-9].*$/', $A1day)) {
-
-$K6montherr = "error";
-
-    
-  }
-  $Kyear = $_POST['Kyear']; 
-  if (!preg_match('/^[0-9].*$/', $Kyear)) {
-
-$Kyearerr = "error";
-
-    
-  }
-
-  $F1day = $_POST['F1day'];
-  if (!preg_match('/^[0-9].*$/', $F1day )) {
-
-$F1dayerr = "error";
-
-    
-  }
-  $KK1day = $_POST['KK1day'];
-  if (!preg_match('/^[0-9].*$/', $KK1day )) {
-
-$KK1dayerr = "error";
-
-    
-  }
-
-  $EEL = $_POST['EEL'];
-  if (!preg_match('/^[0-9].*$/', $EEL)) {
-
-$EELerr = "error";
-   
-  }
-  $EEC = $_POST['EEC'];
-  if (!preg_match('/^[0-9].*$/', $EEC)) {
-
-$EECerr = "error";
-
-    
-  }
-  $EEB = $_POST['EEB'];
-  if (!preg_match('/^[0-9].*$/', $EEB)) {
-
-$EEBerr = "error";
-
-    
-  }
-
-  $EKL = $_POST['EKL'];
-  if (!preg_match('/^[0-9].*$/', $EKL)) {
-
-$EKLerr = "error";
-
-    
-  }
-  $EKC = $_POST['EKC'];
-  if (!preg_match('/^[0-9].*$/', $EKC)) {
-
-$EKCerr = "error";
-
-    
-  }
-  $EKB = $_POST['EKB'];
-  if (!preg_match('/^[0-9].*$/', $EKB)) {
-
-$EKBerr = "error";
-
-    
-  }
-}
-
-
-?>
 
 	<body>
 		<div class="container">
+   
+   
   <div class="jumbotron">
+      
     <h1>Monkey-Cage</h1> 
+    <a href="logout.php"  style="align-content: right; padding-left: 900px; padding-bottom: 300px " >  <button  type="button" class="btn btn-danger">Logout </button> </a>
     <p>Admin Panel</p> 
   </div>
   <div class="panel panel-default">
@@ -242,7 +97,7 @@ $EKBerr = "error";
 
   <div class="panel-body">	
 
-  	<form method="post" action="" >
+  	<form  name="myform" method="post"  action="" enctype="multipart/form-data" >
 <h2  style="color:red;" >Timings</h2>
   		<div class="col-lg-12">
           <div class="table-responsive">
@@ -261,6 +116,7 @@ $EKBerr = "error";
 
 	<tr>
 	<td>
+<label>Von: </label>
 <select name="SATo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -271,6 +127,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="SATc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -284,6 +141,7 @@ $EKBerr = "error";
 
 
 	<td>
+    <label>Von: </label>
 <select name="SUNo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -294,6 +152,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="SUNc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -304,6 +163,8 @@ $EKBerr = "error";
   ?> 
 </select><br><br><input type="checkbox" name="sunclo">Closed<br></td>
 	<td>
+    <label>Von: </label>
+
 <select name="MONo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -314,6 +175,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="MONc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -324,6 +186,8 @@ $EKBerr = "error";
   ?> 
 </select><br><br><input type="checkbox" name="monclo">Closed<br></td>
 	<td>
+    <label>Von: </label>
+
 <select name="TUEo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -334,6 +198,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="TUEc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -344,6 +209,8 @@ $EKBerr = "error";
   ?> 
 </select><br><br><input type="checkbox" name="tueclo">Closed<br></td></input></td>
 	<td>
+    <label>Von: </label>
+
 <select name="WEDo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -354,6 +221,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="WEDc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -364,6 +232,8 @@ $EKBerr = "error";
   ?> 
 </select><br><br><input type="checkbox" name="wedclo">Closed<br></td>
 	<td>
+    <label>Von: </label>
+
 <select name="THUo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -374,6 +244,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="THUc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -384,6 +255,8 @@ $EKBerr = "error";
   ?> 
 </select><br><br><input type="checkbox" name="thuclo">Closed<br></td>
 	<td>
+    <label>Von: </label>
+
 <select name="FRIo">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -394,6 +267,7 @@ $EKBerr = "error";
   ?> 
 </select>
 <br>-<br>
+<label>Nach: </label>
 <select name="FRIc">
 		<?php
 		for ($i=0; $i < 24 ; $i++) { 
@@ -688,7 +562,7 @@ $EKBerr = "error";
 
 
 	<tr>
-	<td> <input type="text" name="A1day"  placeholder="Eingeben Preis" ></input> <span class="error" style ="color:red;">* <?php echo $A1dayerr ;?></span></td> 
+	<td> <input type="text" id="numb" name="A1day"  placeholder="Eingeben Preis"  value="xyz"> <p id="demo"></p> </input> </td> 
 
    </tr>
 
@@ -698,7 +572,7 @@ $EKBerr = "error";
 
 
 	<tr>
-	<td> <input type="text" name="A1month"  placeholder="Eingeben Preis" ></input> <span class="error" style ="color:red;">* <?php echo $A1montherr ;?></span> </td>
+	<td> <input type="text" name="A1month" id="numb"  placeholder="Eingeben Preis" > <p id="demo"> </input></td>
    </tr>
 
    <tr>
@@ -979,8 +853,190 @@ $EKBerr = "error";
 
 </div>
 <div class="col-lg-12" style="text-align: center;">
-<input type="submit"  name="update" value="Einreichen" class="btn btn-danger"> </input>
+<button name="update"  type="button" onclick="myFunction()" value="Einreichen" class="btn btn-danger">Submit </button>
+<button name="update"  type="submit" value="Einreichen" class="btn btn-danger">Submit </button>
 
+
+ <?php
+$A1dayerr =  $A1montherr = $A3montherr = $A6montherr = $Ayearerr = " ";
+$S1dayerr = $S1montherr= $S3montherr= $S6montherr= $Syearerr=" ";
+$K1dayerr= $K1montherr = $K3montherr= $K6montherr= $Kyearerr=" ";
+$F1dayerr =" ";
+$KK1dayerr = " ";
+$EELerr = $EECerr = $EEBerr=" ";
+$EKLerr = $EKCerr = $EKBerr = " ";
+
+if (isset($_POST['update'])) {
+  
+
+
+  $A1day = $_POST['A1day'];  
+    echo $A1day;
+  
+
+  $A1month = $_POST['A1month'];
+   if (!preg_match('/^[0-9 ].*$/', $A1month)) {
+
+$A1montherr = "error";
+
+    
+  }
+  $A3month = $_POST['A3month'];
+   if (!preg_match('/^[0-9 ].*$/', $A3month)) {
+
+$A3montherr = "error";
+
+    
+  }
+  $A6month = $_POST['A6month'];
+   if (!preg_match('/^[0-9 ].*$/', $A6month)) {
+
+$A6montherr = "error";
+
+    
+  }
+  $Ayear = $_POST['Ayear'];
+   if (!preg_match('/^[0-9 ].*$/', $Ayear)) {
+
+$Ayearerr = "error";
+
+    
+  }
+
+  $S1day = $_POST['S1day'];
+  if (!preg_match('/^[0-9 ].*$/', $S1day)) {
+
+$S1dayerr = "error";
+
+    
+  }
+  $S1month = $_POST['S1month'];
+    if (!preg_match('/^[0-9 ].*$/', $S1month)) {
+
+$S1montherr = "error";
+
+    
+  }
+
+  $S3month = $_POST['S3month'];
+    if (!preg_match('/^[0-9 ].*$/', $S3month)) {
+
+$S3montherr = "error";
+
+    
+  }
+  $S6month = $_POST['S6month'];
+    if (!preg_match('/^[0-9 ].*$/', $S6month)) {
+
+$S6montherr = "error";
+
+    
+  }
+  $Syear = $_POST['Syear'];
+    if (!preg_match('/^[0-9 ].*$/', $Syear)) {
+
+$Syearerr = "error";
+
+    
+  }
+
+  $K1day = $_POST['K1day'];
+    if (!preg_match('/^[0-9 ].*$/', $K1day)) {
+
+$K1dayerr = "error";
+
+    
+  }
+  $K1month = $_POST['K1month'];
+    if (!preg_match('/^[0-9].*$/', $K1month)) {
+
+$K1montherr = "error";
+
+    
+  }
+  $K3month = $_POST['K3month'];
+    if (!preg_match('/^[0-9].*$/', $K3month)) {
+
+$K3montherr = "error";
+
+    
+  }
+  $K6month = $_POST['K6month'];
+    if (!preg_match('/^[0-9].*$/', $A1day)) {
+
+$K6montherr = "error";
+
+    
+  }
+  $Kyear = $_POST['Kyear']; 
+  if (!preg_match('/^[0-9].*$/', $Kyear)) {
+
+$Kyearerr = "error";
+
+    
+  }
+
+  $F1day = $_POST['F1day'];
+  if (!preg_match('/^[0-9].*$/', $F1day )) {
+
+$F1dayerr = "error";
+
+    
+  }
+  $KK1day = $_POST['KK1day'];
+  if (!preg_match('/^[0-9].*$/', $KK1day )) {
+
+$KK1dayerr = "error";
+
+    
+  }
+
+  $EEL = $_POST['EEL'];
+  if (!preg_match('/^[0-9].*$/', $EEL)) {
+
+$EELerr = "error";
+   
+  }
+  $EEC = $_POST['EEC'];
+  if (!preg_match('/^[0-9].*$/', $EEC)) {
+
+$EECerr = "error";
+
+    
+  }
+  $EEB = $_POST['EEB'];
+  if (!preg_match('/^[0-9].*$/', $EEB)) {
+
+$EEBerr = "error";
+
+    
+  }
+
+  $EKL = $_POST['EKL'];
+  if (!preg_match('/^[0-9 ].*$/', $EKL)) {
+
+$EKLerr = "error";
+
+    
+  }
+  $EKC = $_POST['EKC'];
+  if (!preg_match('/^[0-9].*$/', $EKC)) {
+
+$EKCerr = "error";
+
+    
+  }
+  $EKB = $_POST['EKB'];
+  if (!preg_match('/^[0-9].*$/', $EKB)) {
+
+$EKBerr = "error";
+
+    
+  }
+}
+
+
+?>
 
 
 
@@ -1004,3 +1060,10 @@ $EKBerr = "error";
 
 </body>
 </html>
+
+<?php
+
+}
+
+
+?>
