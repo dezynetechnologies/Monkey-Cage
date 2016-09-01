@@ -21,7 +21,6 @@ body {
 	font-weight: 300;
 	color: #545A5F;
 	overflow-x: hidden;
-	
 }
 a {
 	color: #f7465b;
@@ -2628,7 +2627,7 @@ hr.hr-width-10 { max-width: 900px; }
 /* Portfolio item */
 .portfolio-item {
 	position: relative;
-	background-color: #000000;
+	background-color: #F2F2F2;
 	overflow: hidden;
 }
 .portfolio-item .item-link {

@@ -86,7 +86,7 @@ $(function() {
     var $children = this.$menu.find('> .dropdown-menu > ' + desc);
 
     this.$submenus = $children.filter('.dropdown-submenu');
-    this.$img-1.jpgs = $children.not('.dropdown-submenu');
+    this.$items = $children.not('.dropdown-submenu');
 
     this.init();
   }

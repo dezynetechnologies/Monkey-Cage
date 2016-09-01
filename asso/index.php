@@ -76,169 +76,7 @@
 
 
 
-<script>
-$(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideToggle("fast");
-    });
-});
-</script>
 
- <script>
-$(document).ready(function(){
-    $("#flip1").click(function(){
-        $("#panel1").slideToggle("fast");
-   
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip2").click(function(){
-        $("#panel2").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip3").click(function(){
-        $("#panel3").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip4").click(function(){
-        $("#panel4").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip5").click(function(){
-        $("#panel5").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip6").click(function(){
-        $("#panel6").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip7").click(function(){
-        $("#panel7").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip8").click(function(){
-        $("#panel8").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip9").click(function(){
-        $("#panel9").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip10").click(function(){
-        $("#panel10").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip11").click(function(){
-        $("#panel11").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip12").click(function(){
-        $("#panel12").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip13").click(function(){
-        $("#panel13").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip14").click(function(){
-        $("#panel14").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip15").click(function(){
-        $("#panel15").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip16").click(function(){
-        $("#panel16").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip17").click(function(){
-        $("#panel17").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip18").click(function(){
-        $("#panel18").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip19").click(function(){
-        $("#panel19").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip20").click(function(){
-        $("#panel20").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip21").click(function(){
-        $("#panel21").slideToggle("fast");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $("#flip22").click(function(){
-        $("#panel22").slideToggle("fast");
-    });
-});
-</script>
 
 	</head>
 
@@ -494,7 +332,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 			* Use class "angle-left-bottom" or "angle-right-bottom" to change intro bottom angle.
 			* Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
 			-->
-			<section id="intro" class="full-height bg-image-parallax" style="background-image: url(assets/img/intro/intro.png);">
+			<section id="intro" class="full-height bg-image-parallax" style="background-image: url(assets/img/intro.png);">
 				
 				<div class="intro-inner">
 				
@@ -543,7 +381,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 			* Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
 			* Use class "bg-pattern" if you use background patterns (example: http://subtlepatterns.com/). Combine with class "bg-image-fixed".
 			-->
-			<section class="call-to-action-section angle-left-bottom bg-dark bg-pattern" style="background-image: url(assets/img/patterns/ptn-2.png);">
+			<section class="call-to-action-section angle-left-bottom bg-dark bg-pattern" style="background-image: url(assets/img/intro.png);">
 
 				<!-- Element cover
 				===================
@@ -832,12 +670,12 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
                       	<div class="col-lg-12 col-md-12">
                       		<div  class="col-lg-6 col-md-8">
 
-                      			<img src="assets/img/services/p1.jpg">
+                      			<img src="assets/img/p1.jpg">
 
                       		</div>
                       		<div  class="col-lg-6 col-md-8">
 
-                      			<img src="assets/img/services/p2.jpg">
+                      			<img src="assets/img/p2.jpg">
 
                       		</div>
  
@@ -855,7 +693,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 			<!-- ==================================
 			///// Begin section 3 (portfolio) /////
 			=================================== -->
-			<section id="section-3" class="portfolio-section" class="bg-dark angle-right-top angle-left-bottom bg-image-parallax" style="background-image: url(assets/img/intro/intro-bg22.jpg);">
+			<section id="section-3" class="portfolio-section" class="bg-dark angle-right-top angle-left-bottom bg-image-parallax" style="background-image: url(assets/img/bg22.jpg);">
 
 				<div class="container">
 					<div class="row wow fadeIn">
@@ -962,7 +800,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="portfolio-item">
 										<a class="item-link inline-popup-trigger" >
 											<span class="cover bg-transparent-9-main"></span>
-											<img class="item-img" src="assets/img/portfolio/masonry/1.png" alt="image">
+											<img class="item-img" src="assets/img/1.png" alt="image">
 											<div class="item-info text-white">
 												<h3 class="item-info-title">Regelmäßige Kurse</h3>
 												<p class="item-info-text">(je 1x wöchentliches Techniktraining mit aufsteigender Schwierigkeit)</p>
@@ -1017,7 +855,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="portfolio-item">
 										<a class="item-link inline-popup-trigger" >
 											<span class="cover bg-transparent-9-main"></span>
-											<img class="item-img" src="assets/img/portfolio/masonry/2.jpg" alt="image">
+											<img class="item-img" src="assets/img/2.jpg" alt="image">
 											<div class="item-info text-white">
 												<h3 class="item-info-title">Gruppenkurse </h3>
 												<p class="item-info-text">(Technik für Einsteiger 2x monatlich; Krafttraining für Fortgeschrittene 2x monatlich)</p>
@@ -1072,7 +910,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="portfolio-item">
 										<a class="item-link inline-popup-trigger" >
 											<span class="cover bg-transparent-9-main"></span>
-											<img class="item-img" src="assets/img/portfolio/masonry/33.png" alt="image">
+											<img class="item-img" src="assets/img/33.jpg" alt="image">
 											<div class="item-info text-white">
 												<h3 class="item-info-title">Individuelle Kurse</h3>
 												<p class="item-info-text">(auf Anfrage – Einzeltrainerstunden)</p>
@@ -1185,7 +1023,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="portfolio-item">
 										<a class="item-link inline-popup-trigger" >
 											<span class="cover bg-transparent-9-main"></span>
-											<img class="item-img" src="assets/img/portfolio/masonry/4.jpg" alt="image">
+											<img class="item-img" src="assets/img/4.jpg" alt="image">
 											<div class="item-info text-white">
 												<h3 class="item-info-title">Yoga & Pilates</h3>
 												<p class="item-info-text"></p>
@@ -3050,16 +2888,168 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83003656-1', 'auto');
-  ga('send', 'pageview');
-
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("fast");
+    });
+});
 </script>
 
+ <script>
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideToggle("fast");
+   
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip3").click(function(){
+        $("#panel3").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip4").click(function(){
+        $("#panel4").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip5").click(function(){
+        $("#panel5").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip6").click(function(){
+        $("#panel6").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip7").click(function(){
+        $("#panel7").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip8").click(function(){
+        $("#panel8").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip9").click(function(){
+        $("#panel9").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip10").click(function(){
+        $("#panel10").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip11").click(function(){
+        $("#panel11").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip12").click(function(){
+        $("#panel12").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip13").click(function(){
+        $("#panel13").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip14").click(function(){
+        $("#panel14").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip15").click(function(){
+        $("#panel15").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip16").click(function(){
+        $("#panel16").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip17").click(function(){
+        $("#panel17").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip18").click(function(){
+        $("#panel18").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip19").click(function(){
+        $("#panel19").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip20").click(function(){
+        $("#panel20").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip21").click(function(){
+        $("#panel21").slideToggle("fast");
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#flip22").click(function(){
+        $("#panel22").slideToggle("fast");
+    });
+});
+</script>
 
 
 

@@ -116,15 +116,50 @@ return false;
 
 }
 </script>-->
+<script> 
+var maxAmount = 350;
+function textCounter(textField, showCountField) {
+    if (textField.value.length > maxAmount) {
+        textField.value = textField.value.substring(0, maxAmount);
+  } else { 
+        showCountField.value = maxAmount - textField.value.length;
+  }
+}
 </script>
 
- <script language="javascript">
+<script> 
+var maxAmount1 = 25;
+function textCounter1(x, y) {
+    if (x.value.length > maxAmount1) {
+        x.value = x.value.substring(0, maxAmount1);
+  } else { 
+        y.value = maxAmount1 - x.value.length;
+  }
+}
+</script>
+
+<script> 
+var maxAmount2 = 150;
+function textCounter2(x, y) {
+    if (x.value.length > maxAmount2) {
+        x.value = x.value.substring(0, maxAmount2);
+  } else { 
+        y.value = maxAmount2 - x.value.length;
+  }
+}
+</script>
+
+
+
+
+<script language="javascript">
     function enableDisable(bEnable, textBoxID, textBoxID1)
     {
          document.getElementById(textBoxID).disabled = bEnable
          document.getElementById(textBoxID1).disabled = bEnable
     }
 </script>
+
    
 	</head>
 
@@ -345,9 +380,10 @@ return false;
           	 		
           	 	</tr>
           	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_service" ></textarea></td>
-          	 		
-
+          	 		<td><textarea rows="1" cols="50" name="ts"  onKeyDown="textCounter1(this.form.ts,this.form.countDisplayts);" onKeyUp="textCounter1(this.form.ts,this.form.countDisplayts);"></textarea>
+          	 	 <br>
+                 <input readonly type="text" name="countDisplayts" size="3" maxlength="3" value="25"> Characters Remaining</td>	
+              
           	 	</tr>
 
           	 	<tr>
@@ -356,7 +392,11 @@ return false;
           	 	</tr>
           	 	<tr>
           	 		
-          	 		<td><textarea rows="25" cols="50" style="margin: 0px; height: 546px; width: 381px;" name="content_service"></textarea></td>
+          	 		<td><textarea rows="25" cols="50" style="margin: 0px; height: 546px; width: 381px;" name="cs" onKeyDown="textCounter(this.form.cs,this.form.countDisplaycs);" onKeyUp="textCounter(this.form.cs,this.form.countDisplaycs);"></textarea>
+                   <br>
+                   <input readonly type="text" name="countDisplaycs" size="3" maxlength="3" value="350"> Characters Remaining</td> 
+
+                </td>
 
           	 	</tr>
 
@@ -377,59 +417,78 @@ return false;
           	 		<th>Feature1</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_feature1"></textarea></td>
-          	 		
-
+          	 <tr>
+                <td><textarea rows="1" cols="50" name="tf1"  onKeyDown="textCounter1(this.form.tf1,this.form.countDisplaytf1);" onKeyUp="textCounter1(this.form.tf1,this.form.countDisplaytf1);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplaytf1" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
           	 	</tr>
-
-          	 	<tr>
           	 		
           	 		<th>Content1</th>
           	 	</tr>
           	 	<tr>
           	 		
-          	 		<td><textarea rows="4" cols="50"  name="title_content1"></textarea></td>
+          	 		<td><textarea rows="4" cols="50"  name="tc1" onKeyDown="textCounter2(this.form.tc1,this.form.countDisplaytc1);" onKeyUp="textCounter2(this.form.tc1,this.form.countDisplaytc1);"></textarea>
+
+                <br>
+                 <input readonly type="text" name="countDisplaytc1" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                </td>
 
           	 	</tr>
           	 		<tr>
           	 		<th>Feature2</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_feature2"></textarea></td>
-          	 		
-
-          	 	</tr>
+          	  <tr>
+                <td><textarea rows="1" cols="50" name="tf2"  onKeyDown="textCounter1(this.form.tf2,this.form.countDisplaytf2);" onKeyUp="textCounter1(this.form.tf2,this.form.countDisplaytf2);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplaytf2" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
+              </tr>
 
           	 	<tr>
           	 		
           	 		<th>Content2</th>
           	 	</tr>
-          	 	<tr>
-          	 		
-          	 		<td><textarea rows="4" cols="50"  name="title_content2"></textarea></td>
+          	 <tr>
+                
+                <td><textarea rows="4" cols="50"  name="tc2" onKeyDown="textCounter2(this.form.tc2,this.form.countDisplaytc2);" onKeyUp="textCounter2(this.form.tc2,this.form.countDisplaytc2);"></textarea>
 
-          	 	</tr>
+                <br>
+                 <input readonly type="text" name="countDisplaytc2" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                </td>
+
+              </tr>
           	 		<tr>
           	 		<th>Feature3</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_feature3"></textarea></td>
-          	 		
-
-          	 	</tr>
+          	 	 <tr>
+                <td><textarea rows="1" cols="50" name="tf3"  onKeyDown="textCounter1(this.form.tf3,this.form.countDisplaytf1);" onKeyUp="textCounter1(this.form.tf3,this.form.countDisplaytf3);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplaytf3" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
+              </tr>
 
           	 	<tr>
           	 		
           	 		<th>Content3</th>
           	 	</tr>
           	 	<tr>
-          	 		
-          	 		<td><textarea rows="4" cols="50"  name="title_content3"></textarea></td>
+                
+                <td><textarea rows="4" cols="50"  name="tc3" onKeyDown="textCounter2(this.form.tc3,this.form.countDisplaytc3);" onKeyUp="textCounter2(this.form.tc3,this.form.countDisplaytc3);"></textarea>
 
-          	 	</tr>
+                <br>
+                 <input readonly type="text" name="countDisplaytc3" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                </td>
+
+              </tr>
 
           	 	 	 		
 
@@ -467,20 +526,28 @@ return false;
           	 		<th>Title1</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 		<td><textarea rows="1" cols="50"  name="title_offer1"></textarea></td>
-          	 		
-          	 	</tr>
+          	  <tr>
+                <td><textarea rows="1" cols="50" name="to1"  onKeyDown="textCounter1(this.form.to1,this.form.countDisplayto1);" onKeyUp="textCounter1(this.form.to1,this.form.countDisplayto1);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplayto1" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Content1</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 	
-          	 		<td><textarea rows="4" cols="50" name="content_offer1" ></textarea></td>
-          	 	
-          	 	</tr>
+          	 <tr>
+                
+                <td><textarea rows="4" cols="50"  name="co1" onKeyDown="textCounter2(this.form.co1,this.form.countDisplayco1);" onKeyUp="textCounter2(this.form.co1,this.form.countDisplayco1);"></textarea>
+
+                <br>
+                 <input readonly type="text" name="countDisplayco1" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                
+
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Image1</th>
@@ -500,19 +567,27 @@ return false;
           	 		
           	 	</tr>
           	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_offer2"></textarea></td>
-          	 		
-          	 	</tr>
+                <td><textarea rows="1" cols="50" name="to2"  onKeyDown="textCounter1(this.form.to2,this.form.countDisplayto2);" onKeyUp="textCounter1(this.form.to2,this.form.countDisplayto2);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplayto2" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Content2</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 	
-          	 		<td><textarea rows="4" cols="50" name="content_offer2"></textarea></td>
-          	 	
-          	 	</tr>
+          	  <tr>
+                
+                <td><textarea rows="4" cols="50"  name="co2" onKeyDown="textCounter2(this.form.co2,this.form.countDisplayco2);" onKeyUp="textCounter2(this.form.co2,this.form.countDisplayco2);"></textarea>
+
+                <br>
+                 <input readonly type="text" name="countDisplayco2" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                
+
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Image2</th>
@@ -535,19 +610,27 @@ return false;
           	 		
           	 	</tr>
           	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_offer3"></textarea></td>
-          	 		
-          	 	</tr>
+                <td><textarea rows="1" cols="50" name="to3"  onKeyDown="textCounter1(this.form.to3,this.form.countDisplayto3);" onKeyUp="textCounter1(this.form.to3,this.form.countDisplayto3);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplayto3" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Content3</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 	
-          	 		<td><textarea rows="4" cols="50" name="content_offer3"></textarea></td>
-          	 	
-          	 	</tr>
+          	 	 <tr>
+                
+                <td><textarea rows="4" cols="50"  name="co3" onKeyDown="textCounter2(this.form.co3,this.form.countDisplayco3);" onKeyUp="textCounter2(this.form.co3,this.form.countDisplayco3);"></textarea>
+
+                <br>
+                 <input readonly type="text" name="countDisplayco3" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                
+
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Image3</th>
@@ -566,20 +649,28 @@ return false;
           	 		<th>Title4</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 		<td><textarea rows="1" cols="50" name="title_offer4"></textarea></td>
-          	 		
-          	 	</tr>
+          	 <tr>
+                <td><textarea rows="1" cols="50" name="to4"  onKeyDown="textCounter1(this.form.to4,this.form.countDisplayto4);" onKeyUp="textCounter1(this.form.to4,this.form.countDisplayto4);"></textarea>
+               <br>
+                 <input readonly type="text" name="countDisplayto4" size="3" maxlength="3" value="25"> Characters Remaining</td> 
+              
+            
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Content4</th>
           	 		
           	 	</tr>
-          	 	<tr>
-          	 	
-          	 		<td><textarea rows="4" cols="50"></textarea></td>
-          	 	
-          	 	</tr>
+          	 	 <tr>
+                
+                <td><textarea rows="4" cols="50"  name="co4" onKeyDown="textCounter2(this.form.co4,this.form.countDisplayco4);" onKeyUp="textCounter2(this.form.co4,this.form.countDisplayco4);"></textarea>
+
+                <br>
+                 <input readonly type="text" name="countDisplayco4" size="3" maxlength="3" value="150"> Characters Remaining</td> 
+
+                
+
+              </tr>
           	 		<tr>
           	 		
           	 		<th>Image4</th>
@@ -906,7 +997,7 @@ return false;
 <input name="update"  type="submit" value="Einreichen" >
  <?php
 
-
+include("db.php");
 if (isset($_POST['update'])) {
   
 
@@ -917,6 +1008,51 @@ if (isset($_POST['update'])) {
 $A1month = $_POST['A1month'];
 
 echo $A1month;
+
+if (isset($_POST['satclo'])) {
+  
+  $satclo="CLOSED";
+
+  $insert_update ="UPDATE  main SET satclo='$satclo' ";
+
+$run_insert_update= mysqli_query($conn, $insert_update);
+if ($run_insert_update) {
+  echo "<script>alert('Data has been added')</script>";
+}
+else
+{
+  echo "Error: " . $insert_update . "<br>" . mysqli_error($conn);
+}
+}
+else {
+ 
+ $sato= $_POST['SATo'];
+
+ $satc = $_POST['SATc'];
+
+ $satclo = "$sato <br> $satc";
+
+$insert_update ="UPDATE  main SET satclo ='$satclo'";
+
+$run_insert_update= mysqli_query($conn, $insert_update);
+
+if ($run_insert_update) {
+  echo "<script>alert('Data has been added')</script>";
+}
+else
+{
+  echo "Error: " . $insert_update . "<br>" . mysqli_error($conn);
+}
+
+ 
+
+}
+
+
+
+
+
+
 
  
   }

@@ -9,7 +9,7 @@
 <body>
 
 <div class="login">
-	<h1>Login</h1>
+	<h1>MonkeyCage <br> Admin Panel</h1>
     <form method="post" action="">
     	<input type="text" name="email" placeholder="Username" required="required" />
         <input type="password" name="pass" placeholder="Password" required="required" />
@@ -23,8 +23,8 @@
 include("db.php");
 if (isset($_POST['submit'])) {
 	
-	$email = mysql_real_escape_string($_POST['email']);
-	$pass = mysql_real_escape_string($_POST['pass']);
+	$email = mysqli_real_escape_string($conn,$_POST['email']);
+	$pass = mysqli_real_escape_string($conn,$_POST['pass']);
 
 	$sel_user = "SELECT * FROM admin WHERE user_email='$email' and user_pass='$pass'";
 	$run_sel_user = mysqli_query($conn, $sel_user);
