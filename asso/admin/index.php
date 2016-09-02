@@ -187,13 +187,13 @@ function textCounter2(x, y) {
           <div class="table-responsive">
           	 <table class="table">
   			<tr>
-		<th>SAT</th>
-		<th>SUN</th>
-		<th>MON</th>
-		<th>TUE</th>
-		<th>WED</th>
-		<th>THU</th>
-		<th>FRI</th>
+		<th>SAMSTAG</th>
+		<th>SONNTAG</th>
+		<th>MONTAG</th>
+		<th>DIENSTAG</th>
+		<th>MITTWOCH</th>
+		<th>DONNERSTAG</th>
+		<th>DONNERSTAG</th>
 
 	</tr>
 
@@ -220,7 +220,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="satclo" id="checkBox" onclick="enableDisable(this.checked, 'sato','satc')">Closed<br></td>
+</select><br><br><input type="checkbox" name="satclo" id="checkBox" onclick="enableDisable(this.checked, 'sato','satc')">Geschlossen<br></td>
 
 
 
@@ -245,7 +245,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="sunclo" id="checkBox" onclick="enableDisable(this.checked, 'suno','sunc')">Closed<br></td>
+</select><br><br><input type="checkbox" name="sunclo" id="checkBox" onclick="enableDisable(this.checked, 'suno','sunc')">Geschlossen<br></td>
 	<td>
     <label>Von: </label>
 
@@ -268,7 +268,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="monclo" id="checkBox" onclick="enableDisable(this.checked, 'mono','monc')">Closed<br></td>
+</select><br><br><input type="checkbox" name="monclo" id="checkBox" onclick="enableDisable(this.checked, 'mono','monc')">Geschlossen<br></td>
 	<td>
     <label>Von: </label>
 
@@ -291,7 +291,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="tueclo" id="checkBox" onclick="enableDisable(this.checked, 'tueo','tuec')">Closed<br></td></input></td>
+</select><br><br><input type="checkbox" name="tueclo" id="checkBox" onclick="enableDisable(this.checked, 'tueo','tuec')">Geschlossen<br></td></input></td>
 	<td>
     <label>Von: </label>
 
@@ -314,7 +314,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="wedclo" id="checkBox" onclick="enableDisable(this.checked, 'wedo','wedc')">Closed<br></td>
+</select><br><br><input type="checkbox" name="wedclo" id="checkBox" onclick="enableDisable(this.checked, 'wedo','wedc')">Geschlossen<br></td>
 	<td>
     <label>Von: </label>
 
@@ -337,7 +337,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="thuclo" id="checkBox" onclick="enableDisable(this.checked, 'thuo','thuc')">Closed<br></td>
+</select><br><br><input type="checkbox" name="thuclo" id="checkBox" onclick="enableDisable(this.checked, 'thuo','thuc')">Geschlossen<br></td>
 	<td>
     <label>Von: </label>
 
@@ -360,7 +360,7 @@ function textCounter2(x, y) {
   echo "<option>$i : 00  </option> ";
 }
   ?> 
-</select><br><br><input type="checkbox" name="friclo" id="checkBox" onclick="enableDisable(this.checked, 'frio','fric')">Closed<br></td>
+</select><br><br><input type="checkbox" name="friclo" id="checkBox" onclick="enableDisable(this.checked, 'frio','fric')">Geschlossen<br></td>
    </tr>
   
 
@@ -1011,7 +1011,7 @@ echo $A1month;
 
 if (isset($_POST['satclo'])) {
   
-  $satclo="CLOSED";
+  $satclo="Geschlossen";
 
   $insert_update ="UPDATE  main SET satclo='$satclo' ";
 
