@@ -122,7 +122,7 @@
 								<h4 class="top-slidingbar-heading text-gray-2">Information</h4>
 								<hr class="hr-width-1 hr-double margin-top-15">
 								<p class="small">Hallo Sportsfreunde,
-wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulderszene nun schon seit Wochen fleißig geköchelt hat, offiziell ein bisschen Input zur geplanten Boulderhalle geben zu können.</p>
+wir freuen uns euch, nachdem die Ger&#220chtek&#220che in der Aschaffenburger Boulderszene nun schon seit Wochen flei&#223ig gek&#214chelt hat, offiziell ein bisschen Input zur geplanten Boulderhalle geben zu k&#214nnen.</p>
 							</div> <!-- /.col -->
 
 							<div class="col col-md-4">
@@ -187,7 +187,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 
 						<!-- Begin logo  -->
 						<div class="logo font-alter-1">
-							<a href="index.html"><h1>As/so</h1></a>
+							<a href="index.php"><h1>As/so</h1></a>
 						</div>
 						<!-- End logo -->
 
@@ -237,7 +237,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
 									* Use class "dropdown-menu-right" to right align the dropdown menu.
 									-->
-									<li class="dropdown dropdown-menu-dark dropdown-hover">
+								<!--	<li class="dropdown dropdown-menu-dark dropdown-hover">
 										<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 											eTWA<span class="caret-2"><i class="fa fa-angle-down"></i></span>
 										</a>
@@ -255,7 +255,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											* Use class "dropdown-menu-dark" to enable dark dropdown menu.
 											* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
 											* Use class "dropdown-submenu" for dropdown submenu.
-											-->
+											
 											<li class="dropdown dropdown-menu-dark dropdown-submenu dropdown-hover">
 												<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 													Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
@@ -274,7 +274,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 													* Use class "dropdown-menu-dark" to enable dark dropdown menu.
 													* Use class "dropdown-menu-color" to enable custom colored dropdown menu.
 													* Use class "dropdown-submenu" for dropdown submenu.
-													-->
+													
 													<li class="dropdown dropdown-menu-dark dropdown-submenu dropdown-hover">
 														<a href="#0" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 															3 Level Submenu<span class="caret-2 margin-left-10"><i class="fa fa-angle-right"></i></span>
@@ -285,15 +285,15 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 															<li><a class="mlc" href="#">Submenu Link 3</a></li>
 															<li><a class="mlc" href="#">Submenu Link 4</a></li>
 															<li><a class="mlc" href="#">Submenu Link 5</a></li>
-														</ul> <!-- /.dropdown-menu -->
+														</ul> <!-- /.dropdown-menu 
 													</li>
-													<!-- End dropdown -->
+													<!-- End dropdown 
 
-												</ul> <!-- /.dropdown-menu -->
+												</ul> <!-- /.dropdown-menu
 											</li>
-											<!-- End dropdown -->
+											<!-- End dropdown -
 
-										</ul> <!-- /.dropdown-menu -->
+										</ul> <!-- /.dropdown-menu 
 									</li>
 									<!-- End dropdown -->
 
@@ -380,54 +380,54 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 			* Use class "bg-image-fixed" to make background image fixed (otherwise use class "bg-image").
 			* Use class "bg-image-parallax" to enable background image parallax effect (otherwise use class "bg-image").
 			* Use class "bg-pattern" if you use background patterns (example: http://subtlepatterns.com/). Combine with class "bg-image-fixed".
-			-->
+			-
 			<section class="call-to-action-section angle-left-bottom bg-dark bg-pattern" style="background-image: url(assets/img/intro.png);">
 
 				<!-- Element cover
 				===================
 				* Use background transparent color classes for colored opacity (example: "bg-transparent-6-dark", "bg-transparent-8-5-red" ... 1 to 95). Look into "helper.css" file for more info.  
-				-->
+				
 				<span class="cover bg-transparent-4-5-dark"></span>
 
 				<div class="container">	
 					
 
-						<!-- Left column -->
+						<!-- Left column -
 						<div class="col-lg-1 col-xs-4">
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; " >SAMSTAG</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; " >SAMSTAG</h1>
                              	<b class="week" >Closed <br></b>
 						</div>
 
 						<div class="col-lg-1 col-xs-4 ">
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; ">SONNTAG</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; ">SONNTAG</h1>
                              	<b class="week" >Closed <br></b>
 						</div>
 						<div class="col-lg-1 col-xs-4">
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; ">MONTAG</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; ">MONTAG</h1>
                              	<b class="week" >Appt<br>Only <br></b>
 						</div>
 						<div class="col-lg-1 col-xs-4">
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; ">DIENSTAG</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; ">DIENSTAG</h1>
                              	<b class="week" >10:00<br>17:00 <br></b>
 						</div>
-						<div class="col-lg-1 col-xs-4" style="padding-left:30px;">
+						<div class="col-lg-1 col-xs-4" >
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; ">MITTWOCH</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; ">MITTWOCH</h1>
                              	<b class="week" >09:00<br>17:00 <br></b>
 						</div>
 
-						<div class="col-lg-1 col-xs-4" style="padding-left:40px;">
+						<div class="col-lg-1 col-xs-4" >
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; ">DONNERSTAG</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; ">DONNERSTAG</h1>
                              	<b class="week" >09:00<br>17:00<br></b>
 						</div>
-						<div class="col-lg-1 col-xs-4" style=" padding-left:80px; " >
+						<div class="col-lg-1 col-xs-4"  >
 
-							<h1 class="call-to-action-title text-gray-2" style="font-size: 18px; ">FREITAG</h1>
+							<h1 class="call-to-action-title text-gray-2" style="font-size: 14px; ">FREITAG</h1>
                              	<b class="week" >09:00<br>17:00 <br></b>
 						</div>
 
@@ -439,7 +439,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 							<h2 class="call-to-action-title text-gray-2 right "></h2>
 						<!--	<p class="lead call-to-action-text text-gray">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-								sed do eiusmod tempor incididunt ut labore.-->
+								sed do eiusmod tempor incididunt ut labore.
 							</p>
 							<p class="call-to-action-text lead text-gray margin-top-30"><strong>  </strong></p>
 							
@@ -452,10 +452,9 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 							<br>
 							<a href="#" class="small text-gray">Or Learn More.. <i class="fa fa-graduation-cap"></i></a>
 							
-						</div> <!-- /.col -->
-
-					</div><!-- /.row -->
-				</div> <!-- /.container -->
+						</div> <!-- /.col 
+					</div><!-- /.row 
+				</div> <!-- /.container 
 			</section>
 			<!-- End call to action section -->
 
@@ -606,7 +605,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 								<!-- End divider -->
 
 								<p class="heading-tescription lead text-gray-2" style="text-align: justify;" >
-									Hallo Sportsfreunde,wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulderszene nun schon seit Wochen fleißig geköchelt hat, offiziell ein bisschen Input zur geplanten Boulderhalle geben zu können.Das wichtigste zuerst: Die Eröffnung des Monkey Cage ist für November 2016 geplant und wir sind guter Dinge und sehr zuversichtlich, dass dies auch so bleibt.Bilder vom Bau und weitere Updates & Entwicklungen folgen.Außerdem suchen wir noch tatkräftige Verstärkung sowohl für unser Theken- als auch unser Trainerteam.Wenn Ihr also den Sport genauso liebt wie wir und Lust habt euch in einem Team rund um den Monkey Cage wieder zu finden, nehmt doch einfach mal Kontakt mit uns auf.
+									Hallo Sportsfreunde,wir freuen uns euch, nachdem die Ger&#220chtek&#220che in der Aschaffenburger Boulderszene nun schon seit Wochen flei&#223ig gek&#214chelt hat, offiziell ein bisschen Input zur geplanten Boulderhalle geben zu k&#214nnen.Das wichtigste zuerst: Die Er&#214ffnung des Monkey Cage ist f&#220r November 2016 geplant und wir sind guter Dinge und sehr zuversichtlich, dass dies auch so bleibt.Bilder vom Bau und weitere Updates & Entwicklungen folgen.Au&#223erdem suchen wir noch tatkr&#228ftige Verst&#228rkung sowohl f&#220r unser Theken- als auch unser Trainerteam.Wenn Ihr also den Sport genauso liebt wie wir und Lust habt euch in einem Team rund um den Monkey Cage wieder zu finden, nehmt doch einfach mal Kontakt mit uns auf.
 
 								</p>
 								
@@ -627,7 +626,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 										<div class="info-box-info">
 											<h4 class="info-box-title">SPASSZEITEN:</h4>
 											<p class="info-box-text text-gray-2" style="text-align: justify;">
-												Bouldern & Monkeybar:<br> Täglich 10:00 bis 23:00 Uhr <br> (auch an den meisten gesetzlichen Feiertagen, bei Abweichungen findet Ihr einen entsprechenden Hinweis hier in den „News“)
+												Bouldern & Monkeybar:<br> T&#228glich 10:00 bis 23:00 Uhr <br> (auch an den meisten gesetzlichen Feiertagen, bei Abweichungen findet Ihr einen entsprechenden Hinweis hier in den &#132News&#147)
 											</p>
 										</div>
 									</div>
@@ -653,7 +652,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="info-box info-box-4 info-box-white wow fadeIn" data-wow-delay="0.4s">
 										<span class="info-box-icon rounded-icon bg-main text-white"><img class="icon icons8-Spa-Filled" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACeklEQVRoQ+2a4VEcMQyFPyoIqYB0AFRAqCB0AB0AFQQqSFJBkgqACoAKgAqACggVwLwdm1mOy1nPw+ytmfWfu5t7kvUsWWtZu4I3joB9YBO4C4i6eKmskWElYEwf8gfYBX4BBwFZFy+VNTI2kR3gBLgEvgaIuHiprJGxiawCD8A/4HOAiIuXyhoZm8gGcAU8pglLXFy89NXI2ERct7v4wULrFPgGHAI/S+4AXLxU1shYHvkC3CbjtT+0TxYNFy9dNTKdDU76lQf0DPkL7AW84eKlskbGJnIBbAHbgL6XhouXvhoZm8hTsjzqRRcv9TUy1UQi+6NvVBRfK2MTcbOJi6/OWO5m15HkPGUr7ZPrwibp46OHTHeOFxOi8Z4F8oFOJGRcabh46auRsdKvJtE5KGcsHSVKw8XXzGHvkZLRS/3fDa2lGrto8onI2FyTPfIjVWY6tLU0dG+gLHcsIvmg1hKBWVs7IipdlSZbHnciorriU8ssgHsR0T3S98aJdKGlITIqltYaI3SfNvvR9BwZm+f6HsnV2dhsLNnTcZiIlJZpwP8njwy42KGpJo+ElmlA0OSRARc7NNXH9YiqrRYPjV1V23+y54uxkD9HAnppcfSJ5N7dSGwMmaHbzu7qdvYY31L9/qrXP68eaSHE3nTN/ldYqWLUmw1jq+XVFlfUyL5XY1GFqJsVlb+68xrDUCdZ0TK3CRspdavbYe/EPjR/iUhuF6vIX9YtZL6uWtjCK4XW73SVepY+32mRLTW5haewUniFQ0vvmvSbONpg+h15P8uyMAhWJOhZ0U88bzpm8zwi0Hp6cUbdKWWvZZHIXEVG2Uo9RhG6mVlsngEOJpnymuSdEwAAAABJRU5ErkJggg==" width="50" height="50"></span>
 										<div class="info-box-info">
-											<h4 class="info-box-title">Sauna (5 € Aufpreis zum regulären Tageseintritt):</h4>
+											<h4 class="info-box-title">Sauna (5 &#163 Aufpreis zum regul&#228ren Tageseintritt):</h4>
 											<p class="info-box-text text-gray-2">
 												Mo bis Fr 18:00 bis 23:00 Uhr <br>Sa & So 11:00 bis 21:00 Uhr
 											</p>
@@ -802,8 +801,8 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<span class="cover bg-transparent-9-main"></span>
 											<img class="item-img" src="assets/img/1.png" alt="image">
 											<div class="item-info text-white">
-												<h3 class="item-info-title">Regelmäßige Kurse</h3>
-												<p class="item-info-text">(je 1x wöchentliches Techniktraining mit aufsteigender Schwierigkeit)</p>
+												<h3 class="item-info-title">Regelm&#228&#223ige Kurse</h3>
+												<p class="item-info-text">(je 1x w&#214chentliches Techniktraining mit aufsteigender Schwierigkeit)</p>
 											</div>
 										</a>
 									</div>
@@ -858,7 +857,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<img class="item-img" src="assets/img/2.jpg" alt="image">
 											<div class="item-info text-white">
 												<h3 class="item-info-title">Gruppenkurse </h3>
-												<p class="item-info-text">(Technik für Einsteiger 2x monatlich; Krafttraining für Fortgeschrittene 2x monatlich)</p>
+												<p class="item-info-text">(Technik f&#220r Einsteiger 2x monatlich; Krafttraining f&#220r Fortgeschrittene 2x monatlich)</p>
 											</div>
 										</a>
 									</div>
@@ -913,7 +912,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<img class="item-img" src="assets/img/33.jpg" alt="image">
 											<div class="item-info text-white">
 												<h3 class="item-info-title">Individuelle Kurse</h3>
-												<p class="item-info-text">(auf Anfrage – Einzeltrainerstunden)</p>
+												<p class="item-info-text">(auf Anfrage - Einzeltrainerstunden)</p>
 											</div>
 										</a>
 									</div>
@@ -1273,7 +1272,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="price-heading-text"></div>
 								</div>
 								<div class="pr-box price-box-price">
-									<div class="price"><span class="price-currency" st></span>99,00 €</div>
+									<div class="price"><span class="price-currency" st></span>99,00 &#163</div>
 									<div class="price-tenure">Pro Monat</div>
 								</div>
 								<div class="pr-box price-features">
@@ -1284,7 +1283,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip" class="btn btn-primary" type="button" style="width:250px;" >
 										  1 Tag   <span class="caret"></span> 
 											
-											 <div style="display:none;" id="panel"> 9,90 € (Regular Hours) <br> 6,90 € (Happy Hours) </div>
+											 <div style="display:none;" id="panel"> 9,90 &#163 (Regular Hours) <br> 6,90 &#163 (Happy Hours) </div>
 
 											  </button>
 
@@ -1295,7 +1294,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip1" class="btn btn-primary" type="button" style="width:250px;" >
 											 11er   <span class="caret"></span> 
 											
-											 <div  style="display:none;" id="panel1"> 99,00 € </div>
+											 <div  style="display:none;" id="panel1"> 99,00 &#163 </div>
 											 </button>
 
                                             
@@ -1305,7 +1304,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											  3-Monate <span class="caret"></span>
                                                
 											
-											 <div  style="display:none;" id="panel2"> 228,00 € </div>
+											 <div  style="display:none;" id="panel2"> 228,00 &#163 </div>
 											 </button>
 
                                             
@@ -1314,7 +1313,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip3" class="btn btn-primary" type="button" style="width:250px;" >
 											  Halbjahr <span class="caret"></span>
                                             
-											 <div  style="display:none;" id="panel3"> 396,00 € </div>
+											 <div  style="display:none;" id="panel3"> 396,00 &#163 </div>
                                             </button>
 											 
                                             
@@ -1324,7 +1323,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											 Jahr <span class="caret"></span>
                                               
 											
-											 <div  style="display:none;" id="panel4"> 616,00 € </div>
+											 <div  style="display:none;" id="panel4"> 616,00 &#163 </div>
 											  </button>
 
                                             
@@ -1345,11 +1344,11 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 							<div class="price-box price-box-dark">
 								<div class="pr-box price-heading">
 									<i class="fa fa-graduation-cap "></i>
-									<h3 class="price-title">Schüler, Studenten, Senioren </h3>
+									<h3 class="price-title">Sch&#220ler, Studenten, Senioren </h3>
 									<div class="price-heading-text"></div>
 								</div>
 								<div class="pr-box price-box-price">
-									<div class="price"><span class="price-currency" st></span>89,00 €</div>
+									<div class="price"><span class="price-currency" st></span>89,00 &#163</div>
 									<div class="price-tenure">Pro Monat</div>
 								</div>
 								<div class="pr-box price-features">
@@ -1358,7 +1357,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip5" class="btn btn-primary" type="button" style="width:250px;"  >
 										  1 Tag   <span class="caret"></span>
 											
-											 <div style="display:none;" id="panel5"> 8,90 € (Regular Hours) <br> 5,90 € (Happy Hours) </div>
+											 <div style="display:none;" id="panel5"> 8,90 &#163 (Regular Hours) <br> 5,90 &#163 (Happy Hours) </div>
 
 											  </button>
 
@@ -1369,7 +1368,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip6" class="btn btn-primary" type="button"  style="width:250px;">
 											 11er   <span class="caret"></span> 
 											
-											 <div  style="display:none;" id="panel6"> 89,00 € </div>
+											 <div  style="display:none;" id="panel6"> 89,00 &#163 </div>
 											 </button>
 
                                             
@@ -1379,7 +1378,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											 3-Monate <span class="caret"></span>
                                                
 											
-											 <div  style="display:none;" id="panel7"> 192,00 € </div>
+											 <div  style="display:none;" id="panel7"> 192,00 &#163 </div>
 											 </button>
 
                                             
@@ -1388,7 +1387,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip8" class="btn btn-primary" type="button" style="width:250px;" >
 											   Halbjahr <span class="caret"></span>
                                             
-											 <div  style="display:none;" id="panel8"> 324,00 € </div>
+											 <div  style="display:none;" id="panel8"> 324,00 &#163 </div>
                                             </button>
 											 
                                             
@@ -1398,7 +1397,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											 Jahr <span class="caret"></span>
                                               
 											
-											 <div  style="display:none;" id="panel9"> 484,00 € </div>
+											 <div  style="display:none;" id="panel9"> 484,00 &#163 </div>
 											  </button>
 
                                             
@@ -1424,7 +1423,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 									<div class="price-heading-text"></div>
 								</div>
 								<div class="pr-box price-box-price">
-									<div class="price"><span class="price-currency"></span>69,00 €</div>
+									<div class="price"><span class="price-currency"></span>69,00 &#163</div>
 									<div class="price-tenure">Pro Monat</div>
 								</div>
 								<div class="pr-box price-features">
@@ -1433,7 +1432,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip10" class="btn btn-primary "  style="width:250px;" type="button"  >
 										1 Tag <span class="caret"></span>
 											
-											 <div style="display:none;" id="panel10"> 6,90 € (Regular Hours) <br> 4,90 € (Happy Hours) </div>
+											 <div style="display:none;" id="panel10"> 6,90 &#163 (Regular Hours) <br> 4,90 &#163 (Happy Hours) </div>
 
 											  </button>
 
@@ -1444,7 +1443,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip11" class="btn btn-primary" style="width:250px;" type="button"  >
 											    11er   <span class="caret"></span>
 											
-											 <div  style="display:none;" id="panel11"> 69,00 € </div>
+											 <div  style="display:none;" id="panel11"> 69,00 &#163 </div>
 											 </button>
 
                                             
@@ -1454,7 +1453,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											  3-Monate <span class="caret"></span>
                                                
 											
-											 <div  style="display:none;" id="panel12"> 156,00 € </div>
+											 <div  style="display:none;" id="panel12"> 156,00 &#163 </div>
 											 </button>
 
                                             
@@ -1463,7 +1462,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip13" class="btn btn-primary" style="width:250px;" type="button"  >
 											   Halbjahr <span class="caret"></span>
                                             
-											 <div  style="display:none;" id="panel13"> 252,00 € </div>
+											 <div  style="display:none;" id="panel13"> 252,00 &#163 </div>
                                             </button>
 											 
                                             
@@ -1473,7 +1472,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 										 Jahr <span class="caret"></span>
                                               
 											
-											 <div  style="display:none;" id="panel14"> 352,00 € </div>
+											 <div  style="display:none;" id="panel14"> 352,00 &#163 </div>
 											  </button>
 
                                             
@@ -1503,7 +1502,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											 1 Tag <span class="caret"></span>
                                               
 											
-											 <div  style="display:none;" id="panel15"> 25,00 € (Regular hours) <br>20,00 € (Happy hours)  </div>
+											 <div  style="display:none;" id="panel15"> 25,00 &#163 (Regular hours) <br>20,00 &#163 (Happy hours)  </div>
 											  </button>
 
                                             
@@ -1529,7 +1528,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											  1 Tag <span class="caret"></span>
                                               
 											
-											 <div  style="display:none;" id="panel16"> 3,00 € (Regular hours) <br> 2,00 € (Happy hours)  </div>
+											 <div  style="display:none;" id="panel16"> 3,00 &#163 (Regular hours) <br> 2,00 &#163 (Happy hours)  </div>
 											  </button>
 
 								</div>
@@ -1601,7 +1600,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip17" class="btn btn-primary" type="button" style="width:250px;" >
 										Leihschuhe   <span class="caret"></span> 
 											
-											 <div style="display:none;" id="panel17"> 9,90 € (Regular Hours) <br> 6,90 € (Happy Hours) </div>
+											 <div style="display:none;" id="panel17"> 9,90 &#163 (Regular Hours) <br> 6,90 &#163 (Happy Hours) </div>
 
 											  </button>
 
@@ -1613,17 +1612,17 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											 Chalkbags   <span class="caret"></span> 
                                                
 											
-											 <div  style="display:none;" id="panel18"> 99,00 € </div>
+											 <div  style="display:none;" id="panel18"> 99,00 &#163 </div>
 											 </button>
 
                                             
                                         </li>
 										<li>
 											<button id="flip19" class="btn btn-primary" type="button"  style="width:250px;" >
-									 Bürsten <span class="caret"></span>
+									 B&#220rsten <span class="caret"></span>
                                                
 											
-											 <div  style="display:none;" id="panel19"> 228,00 € </div>
+											 <div  style="display:none;" id="panel19"> 228,00 &#163 </div>
 											 </button>
 
                                             
@@ -1651,7 +1650,7 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 										<li>
 											<button id="flip20" class="btn btn-primary" type="button" style="width:250px;" >
 										  Leihschuhe   <span class="caret"></span> 
-											 <div style="display:none;" id="panel20"> 4,00 € </div>
+											 <div style="display:none;" id="panel20"> 4,00 &#163 </div>
 
 											  </button>
 
@@ -1662,16 +1661,16 @@ wir freuen uns euch, nachdem die Gerüchteküche in der Aschaffenburger Boulders
 											<button id="flip21" class="btn btn-primary" type="button"  style="width:250px;" >
 											 Chalkbags   <span class="caret"></span> 
 											
-											 <div  style="display:none;" id="panel21"> 2,50 € </div>
+											 <div  style="display:none;" id="panel21"> 2,50 &#163 </div>
 											 </button>
 
                                             
                                         </li>
 										<li>
 											<button id="flip22" class="btn btn-primary" type="button" style="width:250px;" >
-										Bürsten <span class="caret"></span>  
+										B&#220rsten <span class="caret"></span>  
 											
-											 <div  style="display:none;" id="panel22"> 1,50 € </div>
+											 <div  style="display:none;" id="panel22"> 1,50 &#163 </div>
 											 </button>
 
                                             
